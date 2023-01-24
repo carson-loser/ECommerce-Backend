@@ -123,7 +123,7 @@ router.delete('/:id', (req, res) => {
       id: req.params.id,
     },
   })
-    .then(data => res.status(200).json(data))
+    .then(data => res.json(data))
     .catch(err => {
       console.log(err);
       res.status(400).json(err);
